@@ -1,6 +1,7 @@
 package br.com.java.bd;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 
 public class Conexao {
 	
@@ -13,6 +14,19 @@ public class Conexao {
 	
 	public Connection conexao;
 	
-	
+	public Conexao() {
+		
+		try {
+			
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			conexao = DriverManager.getConnection(URL, USUARIO, SENHA);
+			conexao.setAutoCommit(false);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+	}
 
 }
