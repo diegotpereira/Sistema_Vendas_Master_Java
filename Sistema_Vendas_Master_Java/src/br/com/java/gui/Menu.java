@@ -15,6 +15,21 @@ public class Menu extends javax.swing.JFrame{
 
 		 
 		 toolBar.setFloatable(false);
+		 
+		 btVenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/venda.png"))); // NOI18N
+		 btVenda.setText("Venda");
+		 btVenda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+	     btVenda.setFocusable(false);
+	     btVenda.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+	     btVenda.setMargin(new java.awt.Insets(2, 12, 2, 12));
+	     btVenda.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/venda-foco.png"))); // NOI18N
+	     btVenda.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+	     btVenda.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+		
+		      
+	      
+        
+	        
 		 toolBar.add(btVenda);
 	 }
 	 
