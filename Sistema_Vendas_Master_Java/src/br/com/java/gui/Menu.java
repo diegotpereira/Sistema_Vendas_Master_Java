@@ -6,6 +6,8 @@ import br.com.java.gui.LancamentoVenda;
 
 import br.com.java.gui.LancamentoCompra;
 
+import br.com.java.gui.Sobre;
+
 import br.com.java.gui.CadastroCliente;
 
 import br.com.java.gui.CadastroProduto;
@@ -172,6 +174,22 @@ public class Menu extends javax.swing.JFrame{
 	        });
 	        menuSistema.add(miSobre);
 	        
+	        /// componente miSair
+	        btSair.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miSairActionPerformed(evt);
+	            }
+	        });
+	        toolBar.add(btSair);
+	        
+	        miSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
+	        miSair.setText("Sair");
+	        miSair.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miSairActionPerformed(evt);
+	            }
+	        });
+	        menuSistema.add(miSair);
 		      
 	      
         
@@ -215,6 +233,19 @@ public class Menu extends javax.swing.JFrame{
          desktopPane.add(c);
          c.setVisible(true);
      }//GEN-LAST:event_miCompraActionPerformed
+     
+     
+     ///evento miSobre
+     private void miSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miSobreActionPerformed
+         Sobre s = new Sobre(this, true);
+         s.setVisible(true);
+     }//GEN-LAST:event_miSobreActionPerformed
+     
+     
+     //Evento miSair
+     private void miSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miSairActionPerformed
+         System.exit(0);
+     }//GEN-LAST:event_miSairActionPerformed
      
      
      
