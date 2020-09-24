@@ -147,6 +147,8 @@ public class Menu extends javax.swing.JFrame{
 	        menuBar.add(menuMovimentos);
 	        
 	        
+	        
+	        ///componente miCompra
 	        btCompra.addActionListener(new java.awt.event.ActionListener() {
 	            public void actionPerformed(java.awt.event.ActionEvent evt) {
 	                miCompraActionPerformed(evt);
