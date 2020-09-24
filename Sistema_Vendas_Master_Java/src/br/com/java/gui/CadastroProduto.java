@@ -1,5 +1,5 @@
 package br.com.java.gui;
 
-public class CadastroProduto {
+public class CadastroProduto extends javax.swing.JInternalFrame{
 
 }
