@@ -110,6 +110,13 @@ public class Menu extends javax.swing.JFrame{
 	        menuCadastros.add(miFornecedor);
 	        
 	        
+	        //Adicionado componente menuMovimentos
+	        menuMovimentos.setText("Movimentos");
+	        menuMovimentos.add(miVenda);
+	        menuMovimentos.add(miCompra);
+	        menuBar.add(menuMovimentos);
+	        
+	        
 		      
 	      
         
