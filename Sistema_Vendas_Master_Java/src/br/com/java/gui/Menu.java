@@ -7,8 +7,27 @@ public class Menu extends javax.swing.JFrame{
 	}
 	
 	 private void initComponents() {
-		 toolBar = new javax.swing.JToolBar();
-		 btVenda = new javax.swing.JButton();
+		    toolBar = new javax.swing.JToolBar();
+		    btVenda = new javax.swing.JButton();
+	        btCompra = new javax.swing.JButton();
+	        btProduto = new javax.swing.JButton();
+	        btCliente = new javax.swing.JButton();
+	        btFornecedor = new javax.swing.JButton();
+	        btSair = new javax.swing.JButton();
+	        desktopPane = new javax.swing.JDesktopPane();
+	        menuBar = new javax.swing.JMenuBar();
+	        menuCadastros = new javax.swing.JMenu();
+	        miProduto = new javax.swing.JMenuItem();
+	        miCliente = new javax.swing.JMenuItem();
+	        miFornecedor = new javax.swing.JMenuItem();
+	        menuMovimentos = new javax.swing.JMenu();
+	        miVenda = new javax.swing.JMenuItem();
+	        miCompra = new javax.swing.JMenuItem();
+	        menuSistema = new javax.swing.JMenu();
+	        miSobre = new javax.swing.JMenuItem();
+	        miSair = new javax.swing.JMenuItem();
+	  
+	       
 		 
 		 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 	     setTitle("Sistema de Vendas");
@@ -32,9 +51,26 @@ public class Menu extends javax.swing.JFrame{
 	        
 		 toolBar.add(btVenda);
 	 }
-	 
-	 private javax.swing.JToolBar toolBar;
-	 private javax.swing.JButton btVenda;
+	    // variaveis dos componentes
+	    private javax.swing.JButton btCliente;
+	    private javax.swing.JButton btCompra;
+	    private javax.swing.JButton btFornecedor;
+	    private javax.swing.JButton btProduto;
+	    private javax.swing.JButton btSair;
+	    private javax.swing.JButton btVenda;
+	    private javax.swing.JDesktopPane desktopPane;
+	    private javax.swing.JMenuBar menuBar;
+	    private javax.swing.JMenu menuCadastros;
+	    private javax.swing.JMenu menuMovimentos;
+	    private javax.swing.JMenu menuSistema;
+	    private javax.swing.JMenuItem miCliente;
+	    private javax.swing.JMenuItem miCompra;
+	    private javax.swing.JMenuItem miFornecedor;
+	    private javax.swing.JMenuItem miProduto;
+	    private javax.swing.JMenuItem miSair;
+	    private javax.swing.JMenuItem miSobre;
+	    private javax.swing.JMenuItem miVenda;
+	    private javax.swing.JToolBar toolBar;
 	 
 
 }
