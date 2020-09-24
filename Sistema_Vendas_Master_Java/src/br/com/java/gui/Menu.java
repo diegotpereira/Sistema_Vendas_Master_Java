@@ -2,6 +2,8 @@ package br.com.java.gui;
 
 import br.com.java.gui.CadastroFornecedor;
 
+import br.com.java.gui.LancamentoVenda;
+
 import br.com.java.gui.CadastroCliente;
 
 import br.com.java.gui.CadastroProduto;
@@ -109,6 +111,23 @@ public class Menu extends javax.swing.JFrame{
 	        
 	        menuCadastros.add(miFornecedor);
 	        
+	        //Adicionado componente cadastro vendas 
+	        btVenda.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miVendaActionPerformed(evt);
+	            }
+	        });
+	        
+	        miVenda.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, 0));
+	        miVenda.setText("Registrar Venda");
+	        miVenda.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miVendaActionPerformed(evt);
+	            }
+	        });
+	        menuMovimentos.add(miVenda);
+	        
+	        
 	        
 	        //Adicionado componente menuMovimentos
 	        menuMovimentos.setText("Movimentos");
@@ -144,6 +163,14 @@ public class Menu extends javax.swing.JFrame{
          desktopPane.add(c);
          c.setVisible(true);
      }//GEN-LAST:event_miFornecedorActionPerformed
+     
+     
+     ///Adicionado o evento cadastro de vendas 
+     private void miVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miVendaActionPerformed
+         LancamentoVenda v = new LancamentoVenda();
+         desktopPane.add(v);
+         v.setVisible(true);
+     }//GEN-LAST:event_miVendaActionPerformed
      
      
      
