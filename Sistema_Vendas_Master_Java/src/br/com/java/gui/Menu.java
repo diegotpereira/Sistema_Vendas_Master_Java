@@ -1,5 +1,7 @@
 package br.com.java.gui;
 
+import br.com.java.gui.CadastroFornecedor;
+
 import br.com.java.gui.CadastroCliente;
 
 import br.com.java.gui.CadastroProduto;
@@ -64,16 +66,16 @@ public class Menu extends javax.swing.JFrame{
 		 menuBar.add(menuCadastros);
 		 
 		 
-		 // Componente miProduto
-		 miProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
-	        miProduto.setText("Cadastrar Produto");
-	        miProduto.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	                miProdutoActionPerformed(evt);
-	            }
-	        });
+			// Componente miProduto
+			miProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
+			miProduto.setText("Cadastrar Produto");
+			miProduto.addActionListener(new java.awt.event.ActionListener() {
+			    public void actionPerformed(java.awt.event.ActionEvent evt) {
+			        miProdutoActionPerformed(evt);
+			    }
+			});
 	        menuCadastros.add(miProduto);
-	        
+	        	
 	        ///Adicionado evento miCliente
 	        btCliente.addActionListener(new java.awt.event.ActionListener() {
 	        public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,6 +91,23 @@ public class Menu extends javax.swing.JFrame{
 	            }
 	        });
 	        menuCadastros.add(miCliente);
+	        
+	        
+	        
+	        btFornecedor.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miFornecedorActionPerformed(evt);
+	            }
+	        });
+	        miFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, 0));
+	        miFornecedor.setText("Cadastrar Fornecedor");
+	        miFornecedor.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miFornecedorActionPerformed(evt);
+	            }
+	        });
+	        
+	        menuCadastros.add(miFornecedor);
 	        
 	        
 		      
@@ -111,6 +130,13 @@ public class Menu extends javax.swing.JFrame{
          desktopPane.add(c);
          c.setVisible(true);
      }//GEN-LAST:event_miClienteActionPerformed
+     
+     //Evento Cadastrar Fornecedor 
+     private void miFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miFornecedorActionPerformed
+         CadastroFornecedor c = new CadastroFornecedor();
+         desktopPane.add(c);
+         c.setVisible(true);
+     }//GEN-LAST:event_miFornecedorActionPerformed
      
      
      
