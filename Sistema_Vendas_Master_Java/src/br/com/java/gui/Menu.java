@@ -4,6 +4,8 @@ import br.com.java.gui.CadastroFornecedor;
 
 import br.com.java.gui.LancamentoVenda;
 
+import br.com.java.gui.LancamentoCompra;
+
 import br.com.java.gui.CadastroCliente;
 
 import br.com.java.gui.CadastroProduto;
@@ -49,6 +51,13 @@ public class Menu extends javax.swing.JFrame{
 		 toolBar.add(btFornecedor);
 		 toolBar.add(btSair);
 		 getContentPane().add(toolBar, java.awt.BorderLayout.PAGE_START);
+		 
+		 
+		 // componente menuSistema
+		 menuSistema.setText("Sistema");
+		 menuSistema.add(miSobre);
+		 menuSistema.add(miSair);
+		 menuBar.add(menuSistema);
 		 
 		 
 
@@ -136,6 +145,33 @@ public class Menu extends javax.swing.JFrame{
 	        menuBar.add(menuMovimentos);
 	        
 	        
+	        btCompra.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miCompraActionPerformed(evt);
+	            }
+	        });
+	        
+	        miCompra.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F6, 0));
+	        miCompra.setText("Registrar Compra");
+	        miCompra.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miCompraActionPerformed(evt);
+	            }
+	        });
+	        menuMovimentos.add(miCompra);
+	        
+	        
+	        
+	        /// Componente miSobre
+	        miSobre.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
+	        miSobre.setText("Sobre");
+	        miSobre.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miSobreActionPerformed(evt);
+	            }
+	        });
+	        menuSistema.add(miSobre);
+	        
 		      
 	      
         
@@ -171,6 +207,14 @@ public class Menu extends javax.swing.JFrame{
          desktopPane.add(v);
          v.setVisible(true);
      }//GEN-LAST:event_miVendaActionPerformed
+     
+     
+     //Adicionando evento cadastro compras
+     private void miCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miCompraActionPerformed
+         LancamentoCompra c = new LancamentoCompra();
+         desktopPane.add(c);
+         c.setVisible(true);
+     }//GEN-LAST:event_miCompraActionPerformed
      
      
      
