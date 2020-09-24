@@ -1,5 +1,7 @@
 package br.com.java.gui;
 
+import br.com.java.gui.CadastroProduto;
+
 public class Menu extends javax.swing.JFrame{
 	
 	public Menu() {
@@ -32,18 +34,18 @@ public class Menu extends javax.swing.JFrame{
 		 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 	     setTitle("Sistema de Vendas");
 
-		 
+		 // Componente toolBar
 		 toolBar.setFloatable(false);
+		 toolBar.add(btVenda);
+		 toolBar.add(btCompra);
+		 toolBar.add(btProduto);
+		 toolBar.add(btCliente);
+		 toolBar.add(btFornecedor);
+		 toolBar.add(btSair);
+		 getContentPane().add(toolBar, java.awt.BorderLayout.PAGE_START);
 		 
-//		 btVenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/venda.png"))); // NOI18N
-//		 btVenda.setText("Venda");
-//		 btVenda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-//	     btVenda.setFocusable(false);
-//	     btVenda.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-//	     btVenda.setMargin(new java.awt.Insets(2, 12, 2, 12));
-//	     btVenda.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/venda-foco.png"))); // NOI18N
-//	     btVenda.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-//	     btVenda.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+		 
+
 		
 		 // componente MenuBar
 		 menuBar.add(menuCadastros);
@@ -58,12 +60,35 @@ public class Menu extends javax.swing.JFrame{
 		 menuCadastros.add(miCliente);
 		 menuCadastros.add(miFornecedor);
 		 menuBar.add(menuCadastros);
+		 
+		 
+		 // Componente miProduto
+		 miProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
+	        miProduto.setText("Cadastrar Produto");
+	        miProduto.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miProdutoActionPerformed(evt);
+	            }
+	        });
+	        menuCadastros.add(miProduto);
+	        
+	        
 		      
 	      
         
 	        
-		 toolBar.add(btVenda);
+	       
 	 }
+	 
+	// Evento Cadastro de produto
+     private void miProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miProdutoActionPerformed
+         CadastroProduto c = new CadastroProduto();
+         desktopPane.add(c);
+         c.setVisible(true);
+     }//GEN-LAST:event_miProdutoActionPerformed
+     
+     
+     
 	    // variaveis dos componentes
 	    private javax.swing.JButton btCliente;
 	    private javax.swing.JButton btCompra;
