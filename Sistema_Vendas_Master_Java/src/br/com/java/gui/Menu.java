@@ -1,5 +1,7 @@
 package br.com.java.gui;
 
+import br.com.java.gui.CadastroCliente;
+
 import br.com.java.gui.CadastroProduto;
 
 public class Menu extends javax.swing.JFrame{
@@ -72,6 +74,22 @@ public class Menu extends javax.swing.JFrame{
 	        });
 	        menuCadastros.add(miProduto);
 	        
+	        ///Adicionado evento miCliente
+	        btCliente.addActionListener(new java.awt.event.ActionListener() {
+	        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miClienteActionPerformed(evt);
+            }
+	        });
+	        
+	        miCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
+	        miCliente.setText("Cadastrar Cliente");
+	        miCliente.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miClienteActionPerformed(evt);
+	            }
+	        });
+	        menuCadastros.add(miCliente);
+	        
 	        
 		      
 	      
@@ -86,6 +104,13 @@ public class Menu extends javax.swing.JFrame{
          desktopPane.add(c);
          c.setVisible(true);
      }//GEN-LAST:event_miProdutoActionPerformed
+     
+     //Evento Cadastro Cliente 
+     private void miClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miClienteActionPerformed
+         CadastroCliente c = new CadastroCliente();
+         desktopPane.add(c);
+         c.setVisible(true);
+     }//GEN-LAST:event_miClienteActionPerformed
      
      
      
