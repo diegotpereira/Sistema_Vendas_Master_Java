@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.jdenner.to.Cliente;
-import com.jdenner.to.ItemVenda;
+
 
 import br.com.java.to.enums.Situacao;
 
