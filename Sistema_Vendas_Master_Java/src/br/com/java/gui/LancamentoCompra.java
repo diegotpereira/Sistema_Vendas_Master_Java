@@ -12,6 +12,7 @@ import br.com.java.dao.CompraDAO;
 import br.com.java.gui.tm.CompraTableModel;
 import br.com.java.gui.tm.ItemCompraTableModel;
 import br.com.java.to.Compra;
+import br.com.java.to.Fornecedor;
 import br.com.java.to.ItemCompra;
 import br.com.java.to.Produto;
 import br.com.java.to.enums.Situacao;
@@ -86,13 +87,13 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
 
         barraFerramentas.setFloatable(false);
 
-        btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/novo.png"))); // NOI18N
+        btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/novo.png"))); // NOI18N
         btNovo.setText("Novo");
         btNovo.setFocusable(false);
         btNovo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btNovo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btNovo.setMargin(new java.awt.Insets(2, 8, 2, 8));
-        btNovo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/novo-foco.png"))); // NOI18N
+        btNovo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/novo-foco.png"))); // NOI18N
         btNovo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btNovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,13 +102,13 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         });
         barraFerramentas.add(btNovo);
 
-        btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/salvar.png"))); // NOI18N
+        btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/salvar.png"))); // NOI18N
         btSalvar.setText("Salvar");
         btSalvar.setFocusable(false);
         btSalvar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btSalvar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btSalvar.setMargin(new java.awt.Insets(2, 8, 2, 8));
-        btSalvar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/salvar-foco.png"))); // NOI18N
+        btSalvar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/salvar-foco.png"))); // NOI18N
         btSalvar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,13 +117,13 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         });
         barraFerramentas.add(btSalvar);
 
-        btFinalizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/finalizar.png"))); // NOI18N
+        btFinalizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/finalizar.png"))); // NOI18N
         btFinalizar.setText("Finalizar");
         btFinalizar.setFocusable(false);
         btFinalizar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btFinalizar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btFinalizar.setMargin(new java.awt.Insets(2, 8, 2, 8));
-        btFinalizar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/finalizar-foco.png"))); // NOI18N
+        btFinalizar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/finalizar-foco.png"))); // NOI18N
         btFinalizar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btFinalizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,13 +132,13 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         });
         barraFerramentas.add(btFinalizar);
 
-        btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/excluir.png"))); // NOI18N
+        btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/excluir.png"))); // NOI18N
         btExcluir.setText("Excluir");
         btExcluir.setFocusable(false);
         btExcluir.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btExcluir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btExcluir.setMargin(new java.awt.Insets(2, 8, 2, 8));
-        btExcluir.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/excluir-foco.png"))); // NOI18N
+        btExcluir.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/excluir-foco.png"))); // NOI18N
         btExcluir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,13 +147,13 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         });
         barraFerramentas.add(btExcluir);
 
-        btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/cancelar.png"))); // NOI18N
+        btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cancelar.png"))); // NOI18N
         btCancelar.setText("Cancelar");
         btCancelar.setFocusable(false);
         btCancelar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btCancelar.setMargin(new java.awt.Insets(2, 8, 2, 8));
-        btCancelar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/cancelar-foco.png"))); // NOI18N
+        btCancelar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cancelar-foco.png"))); // NOI18N
         btCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,11 +202,11 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         pnForm.add(ftfFornecedor, gridBagConstraints);
 
-        btFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/buscar.png"))); // NOI18N
+        btFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/buscar.png"))); // NOI18N
         btFornecedor.setToolTipText("Localizar cliente");
         btFornecedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btFornecedor.setPreferredSize(new java.awt.Dimension(21, 21));
-        btFornecedor.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/buscar-foco.png"))); // NOI18N
+        btFornecedor.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/buscar-foco.png"))); // NOI18N
         btFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btFornecedorActionPerformed(evt);
@@ -285,11 +286,11 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         pnFormItens.add(ftfProduto, gridBagConstraints);
 
-        btProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/buscar.png"))); // NOI18N
+        btProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/buscar.png"))); // NOI18N
         btProduto.setToolTipText("Localizar produto");
         btProduto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btProduto.setPreferredSize(new java.awt.Dimension(21, 21));
-        btProduto.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/buscar-foco.png"))); // NOI18N
+        btProduto.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/buscar-foco.png"))); // NOI18N
         btProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btProdutoActionPerformed(evt);
@@ -317,10 +318,10 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         pnFormItens.add(spQuantidade, gridBagConstraints);
 
-        btAdicionarItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/novo.png"))); // NOI18N
+        btAdicionarItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/novo.png"))); // NOI18N
         btAdicionarItem.setToolTipText("Adicionar item");
         btAdicionarItem.setPreferredSize(new java.awt.Dimension(35, 30));
-        btAdicionarItem.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/novo-foco.png"))); // NOI18N
+        btAdicionarItem.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/novo-foco.png"))); // NOI18N
         btAdicionarItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btAdicionarItemActionPerformed(evt);
@@ -332,10 +333,10 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         pnFormItens.add(btAdicionarItem, gridBagConstraints);
 
-        btRemoverItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/excluir.png"))); // NOI18N
+        btRemoverItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/excluir.png"))); // NOI18N
         btRemoverItem.setToolTipText("Remover item");
         btRemoverItem.setPreferredSize(new java.awt.Dimension(35, 30));
-        btRemoverItem.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/excluir-foco.png"))); // NOI18N
+        btRemoverItem.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/excluir-foco.png"))); // NOI18N
         btRemoverItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btRemoverItemActionPerformed(evt);
@@ -360,7 +361,15 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         setBounds(10, 10, 450, 500);
 		
 	}
+	public void setFornecedor(Fornecedor cliente) {
+        ftfFornecedor.setValue(cliente);
+    }
 
+    public void setProduto(Produto produto) {
+        ftfProduto.setValue(produto);
+        ftfValorUnitario.setValue(produto.getPrecoCompra());
+    }
+    
 	protected void btRemoverItemActionPerformed(ActionEvent evt) {
 		// TODO Auto-generated method stub
 		if (tbGradeItens.getSelectedRowCount() > 0) {
@@ -417,14 +426,14 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
 	        return true;
 	}
 
-	protected void btProdutoActionPerformed(ActionEvent evt) {
+	protected void btProdutoActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO Auto-generated method stub
 		BuscaProduto buscaProduto = new BuscaProduto(this);
         buscaProduto.setVisible(true);
 		
 	}
 
-	protected void tbGradeMouseClicked(MouseEvent evt) {
+	protected void tbGradeMouseClicked(java.awt.event.MouseEvent evt) {
 		// TODO Auto-generated method stub
 		if (evt.getClickCount() == 2) {
             int linhaSelecionada = tbGrade.getSelectedRow();
@@ -452,20 +461,20 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
 		
 	}
 
-	protected void btFornecedorActionPerformed(ActionEvent evt) {
+	private void btFornecedorActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO Auto-generated method stub
 		BuscaFornecedor buscaFornecedor = new BuscaFornecedor(this);
         buscaFornecedor.setVisible(true);
 		
 	}
 
-	protected void btCancelarActionPerformed(ActionEvent evt) {
+	protected void btCancelarActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO Auto-generated method stub
 		habilitarFormulario(false);
 		
 	}
 
-	protected void btExcluirActionPerformed(ActionEvent evt) {
+	protected void btExcluirActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO Auto-generated method stub
 		int opcao = JOptionPane.showConfirmDialog(this, "Deseja realmente cancelar a compra " + compra + "?");
         if (opcao == 0) {
@@ -481,7 +490,7 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
         }
 	}
 
-	protected void btFinalizarActionPerformed(ActionEvent evt) {
+	protected void btFinalizarActionPerformed(java.awt.event.ActionEvent evt) {
 		 // TODO Auto-generated method stub
 		 int opcao = JOptionPane.showConfirmDialog(this, "Deseja realmente finalizar a compra?");
 	        if (opcao == 0) {
@@ -523,13 +532,28 @@ public class LancamentoCompra extends javax.swing.JInternalFrame {
 		
 	}
 
-	protected void btSalvarActionPerformed(ActionEvent evt) {
+	private boolean validarFormulario() {
+	   // TODO Auto-generated method stub
+       if (ftfFornecedor.getValue() == null) {
+            JOptionPane.showMessageDialog(this, "Fornecedor inválido.", "Alerta", JOptionPane.WARNING_MESSAGE);
+            ftfFornecedor.requestFocus();
+            return false;
+        }
+        if (compra.quantidadeItens() == 0) {
+            JOptionPane.showMessageDialog(this, "Quantidade de itens inválida.", "Alerta", JOptionPane.WARNING_MESSAGE);
+            tpConteudo.setSelectedIndex(1);
+            return false;
+        }
+        return true;
+	}
+
+	protected void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO Auto-generated method stub
 		salvar(false);
 		
 	}
 
-	protected void btNovoActionPerformed(ActionEvent evt) {
+	protected void btNovoActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO Auto-generated method stub
 		compra = new Compra();
         habilitarFormulario(true);
