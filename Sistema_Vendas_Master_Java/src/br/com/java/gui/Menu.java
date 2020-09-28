@@ -226,6 +226,11 @@ public class Menu extends javax.swing.JFrame{
 	        });
 	        toolBar.add(btSair);
 	        
+	        getContentPane().add(toolBar, java.awt.BorderLayout.PAGE_START);
+
+	        desktopPane.setOpaque(false);
+	        getContentPane().add(desktopPane, java.awt.BorderLayout.CENTER);
+	        
 	        miSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
 	        miSair.setText("Sair");
 	        miSair.addActionListener(new java.awt.event.ActionListener() {
@@ -234,6 +239,13 @@ public class Menu extends javax.swing.JFrame{
 	            }
 	        });
 	        menuSistema.add(miSair);
+	        
+	        menuBar.add(menuSistema);
+
+	        setJMenuBar(menuBar);
+
+	        setSize(new java.awt.Dimension(900, 700));
+	        setLocationRelativeTo(null);
 		      
 	      
         
