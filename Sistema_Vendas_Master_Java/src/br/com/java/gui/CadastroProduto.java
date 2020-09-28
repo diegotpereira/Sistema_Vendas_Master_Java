@@ -131,7 +131,7 @@ public class CadastroProduto extends javax.swing.JInternalFrame{
          gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
          pnForm.add(lbNome, gridBagConstraints);
 
-         lbPrecoCompra.setText("PreÃ§o de compra:");
+         lbPrecoCompra.setText("Preço de compra:");
          gridBagConstraints = new java.awt.GridBagConstraints();
          gridBagConstraints.gridx = 0;
          gridBagConstraints.gridy = 1;
@@ -139,7 +139,7 @@ public class CadastroProduto extends javax.swing.JInternalFrame{
          gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
          pnForm.add(lbPrecoCompra, gridBagConstraints);
 
-         lbPrecoVenda.setText("PreÃ§o de venda:");
+         lbPrecoVenda.setText("Preço de venda:");
          gridBagConstraints = new java.awt.GridBagConstraints();
          gridBagConstraints.gridx = 0;
          gridBagConstraints.gridy = 2;
@@ -262,22 +262,22 @@ public class CadastroProduto extends javax.swing.JInternalFrame{
 	private boolean validarFormulario() {
 		  // TODO Auto-generated method stub
 		  if (ftfNome.getText().trim().length() < 2) {
-		        JOptionPane.showMessageDialog(this, "Nome invÃ¡lido.", "Alerta", JOptionPane.WARNING_MESSAGE);
+		        JOptionPane.showMessageDialog(this, "Nome invalido.", "Alerta", JOptionPane.WARNING_MESSAGE);
 		    ftfNome.requestFocus();
 		    return false;
 		}
 		if (((Double) ftfPrecoCompra.getValue()) <= 0) {
-		    JOptionPane.showMessageDialog(this, "PreÃ§o de compra invÃ¡lido.", "Alerta", JOptionPane.WARNING_MESSAGE);
+		    JOptionPane.showMessageDialog(this, "Preço de compra invalido.", "Alerta", JOptionPane.WARNING_MESSAGE);
 		    ftfPrecoCompra.requestFocus();
 		    return false;
 		}
 		if (((Double) ftfPrecoVenda.getValue()) <= 0) {
-		    JOptionPane.showMessageDialog(this, "PreÃ§o de venda invÃ¡lido.", "Alerta", JOptionPane.WARNING_MESSAGE);
+		    JOptionPane.showMessageDialog(this, "Preço de venda invalido.", "Alerta", JOptionPane.WARNING_MESSAGE);
 		    ftfPrecoVenda.requestFocus();
 		    return false;
 		}
 		if (((Double) ftfPrecoVenda.getValue()) <= ((Double) ftfPrecoCompra.getValue())) {
-		    JOptionPane.showMessageDialog(this, "PreÃ§o de venda menor que preÃ§o de compra.", "Alerta", JOptionPane.WARNING_MESSAGE);
+		    JOptionPane.showMessageDialog(this, "Preço de venda menor que preço de compra.", "Alerta", JOptionPane.WARNING_MESSAGE);
 		    ftfPrecoVenda.requestFocus();
 		    return false;
 		}
