@@ -54,13 +54,13 @@ public class CadastroProduto extends javax.swing.JInternalFrame{
 
          barraFerramentas.setFloatable(false);
 
-         btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/novo.png"))); // NOI18N
+         btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/novo.png"))); // NOI18N
          btNovo.setText("Novo");
          btNovo.setFocusable(false);
          btNovo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
          btNovo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
          btNovo.setMargin(new java.awt.Insets(2, 8, 2, 8));
-         btNovo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/novo-foco.png"))); // NOI18N
+         btNovo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/novo-foco.png"))); // NOI18N
          btNovo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
          btNovo.addActionListener(new java.awt.event.ActionListener() {
              public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,13 +69,13 @@ public class CadastroProduto extends javax.swing.JInternalFrame{
          });
          barraFerramentas.add(btNovo);
 
-         btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/salvar.png"))); // NOI18N
+         btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/salvar.png"))); // NOI18N
          btSalvar.setText("Salvar");
          btSalvar.setFocusable(false);
          btSalvar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
          btSalvar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
          btSalvar.setMargin(new java.awt.Insets(2, 8, 2, 8));
-         btSalvar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/salvar-foco.png"))); // NOI18N
+         btSalvar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/salvar-foco.png"))); // NOI18N
          btSalvar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
          btSalvar.addActionListener(new java.awt.event.ActionListener() {
              public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,13 +84,13 @@ public class CadastroProduto extends javax.swing.JInternalFrame{
          });
          barraFerramentas.add(btSalvar);
 
-         btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/excluir.png"))); // NOI18N
+         btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/excluir.png"))); // NOI18N
          btExcluir.setText("Excluir");
          btExcluir.setFocusable(false);
          btExcluir.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
          btExcluir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
          btExcluir.setMargin(new java.awt.Insets(2, 8, 2, 8));
-         btExcluir.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/excluir-foco.png"))); // NOI18N
+         btExcluir.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/excluir-foco.png"))); // NOI18N
          btExcluir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
          btExcluir.addActionListener(new java.awt.event.ActionListener() {
              public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,13 +99,13 @@ public class CadastroProduto extends javax.swing.JInternalFrame{
          });
          barraFerramentas.add(btExcluir);
 
-         btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/cancelar.png"))); // NOI18N
+         btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cancelar.png"))); // NOI18N
          btCancelar.setText("Cancelar");
          btCancelar.setFocusable(false);
          btCancelar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
          btCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
          btCancelar.setMargin(new java.awt.Insets(2, 8, 2, 8));
-         btCancelar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jdenner/gui/img/cancelar-foco.png"))); // NOI18N
+         btCancelar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cancelar-foco.png"))); // NOI18N
          btCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
          btCancelar.addActionListener(new java.awt.event.ActionListener() {
              public void actionPerformed(java.awt.event.ActionEvent evt) {
