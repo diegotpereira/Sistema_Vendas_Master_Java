@@ -6,8 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import com.jdenner.dao.ClienteDAO;
-import com.jdenner.dao.ProdutoDAO;
+
 
 import br.com.java.bd.Conexao;
 import br.com.java.to.ItemVenda;
