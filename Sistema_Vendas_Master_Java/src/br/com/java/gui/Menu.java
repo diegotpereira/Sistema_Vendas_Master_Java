@@ -41,104 +41,11 @@ public class Menu extends javax.swing.JFrame{
 	  
 	       
 		 
-		 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-	     setTitle("Sistema de Vendas");
+	        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+	        setTitle("Sistema de Vendas");
 
-		 // Componente toolBar
-		 toolBar.setFloatable(false);
-		 toolBar.add(btVenda);
-		 toolBar.add(btCompra);
-		 toolBar.add(btProduto);
-		 toolBar.add(btCliente);
-		 toolBar.add(btFornecedor);
-		 toolBar.add(btSair);
-		 getContentPane().add(toolBar, java.awt.BorderLayout.PAGE_START);
-		 
-		 
-		 // componente menuSistema
-		 menuSistema.setText("Sistema");
-		 menuSistema.add(miSobre);
-		 menuSistema.add(miSair);
-		 menuBar.add(menuSistema);
-		 
-		 
+	        toolBar.setFloatable(false);
 
-		
-		 // componente MenuBar
-		 menuBar.add(menuCadastros);
-		 menuBar.add(menuMovimentos);
-		 menuBar.add(menuSistema);
-		 setJMenuBar(menuBar);
-		 
-		 
-		 // Componente MenuCadastros
-		 menuCadastros.setText("Cadastros");
-		 menuCadastros.add(miProduto);
-		 menuCadastros.add(miCliente);
-		 menuCadastros.add(miFornecedor);
-		 menuBar.add(menuCadastros);
-		 
-		 
-			// Componente miProduto
-			miProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
-			miProduto.setText("Cadastrar Produto");
-			miProduto.addActionListener(new java.awt.event.ActionListener() {
-			    public void actionPerformed(java.awt.event.ActionEvent evt) {
-			        miProdutoActionPerformed(evt);
-			    }
-			});
-	        menuCadastros.add(miProduto);
-	        	
-	        ///Adicionado evento miCliente
-	        btCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cliente.png"))); // NOI18N
-	        btCliente.setText("Cliente");
-	        btCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-	        btCliente.setFocusable(false);
-	        btCliente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-	        btCliente.setMargin(new java.awt.Insets(2, 12, 2, 12));
-	        btCliente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cliente-foco.png"))); // NOI18N
-	        btCliente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-	        btCliente.addActionListener(new java.awt.event.ActionListener() {
-	        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                miClienteActionPerformed(evt);
-            }
-	        });
-	        
-	        miCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
-	        miCliente.setText("Cadastrar Cliente");
-	        miCliente.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	                miClienteActionPerformed(evt);
-	            }
-	        });
-	        menuCadastros.add(miCliente);
-	        
-	        
-	        //criação do componente btFornecedor
-	        btFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/fornecedor.png"))); // NOI18N
-	        btFornecedor.setText("Fornecedor");
-	        btFornecedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-	        btFornecedor.setFocusable(false);
-	        btFornecedor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-	        btFornecedor.setMargin(new java.awt.Insets(2, 12, 2, 12));
-	        btFornecedor.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/fornecedor-foco.png"))); // NOI18N
-	        btFornecedor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-	        btFornecedor.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	                miFornecedorActionPerformed(evt);
-	            }
-	        });
-	        miFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, 0));
-	        miFornecedor.setText("Cadastrar Fornecedor");
-	        miFornecedor.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	                miFornecedorActionPerformed(evt);
-	            }
-	        });
-	        
-	        menuCadastros.add(miFornecedor);
-	        
-	        //Adicionado componente cadastro vendas 
 	        btVenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/venda.png"))); // NOI18N
 	        btVenda.setText("Venda");
 	        btVenda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -153,27 +60,8 @@ public class Menu extends javax.swing.JFrame{
 	                miVendaActionPerformed(evt);
 	            }
 	        });
-	        
-	        miVenda.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, 0));
-	        miVenda.setText("Registrar Venda");
-	        miVenda.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	                miVendaActionPerformed(evt);
-	            }
-	        });
-	        menuMovimentos.add(miVenda);
-	        
-	        
-	        
-	        //Adicionado componente menuMovimentos
-	        menuMovimentos.setText("Movimentos");
-	        menuMovimentos.add(miVenda);
-	        menuMovimentos.add(miCompra);
-	        menuBar.add(menuMovimentos);
-	        
-	        
-	        
-	        ///componente miCompra
+	        toolBar.add(btVenda);
+
 	        btCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/compra.png"))); // NOI18N
 	        btCompra.setText("Compra");
 	        btCompra.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -188,29 +76,53 @@ public class Menu extends javax.swing.JFrame{
 	                miCompraActionPerformed(evt);
 	            }
 	        });
-	        
-	        miCompra.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F6, 0));
-	        miCompra.setText("Registrar Compra");
-	        miCompra.addActionListener(new java.awt.event.ActionListener() {
+	        toolBar.add(btCompra);
+
+	        btProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/produto.png"))); // NOI18N
+	        btProduto.setText("Produto");
+	        btProduto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+	        btProduto.setFocusable(false);
+	        btProduto.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+	        btProduto.setMargin(new java.awt.Insets(2, 12, 2, 12));
+	        btProduto.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/produto-foco.png"))); // NOI18N
+	        btProduto.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+	        btProduto.addActionListener(new java.awt.event.ActionListener() {
 	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	                miCompraActionPerformed(evt);
+	                miProdutoActionPerformed(evt);
 	            }
 	        });
-	        menuMovimentos.add(miCompra);
-	        
-	        
-	        
-	        /// Componente miSobre
-	        miSobre.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
-	        miSobre.setText("Sobre");
-	        miSobre.addActionListener(new java.awt.event.ActionListener() {
+	        toolBar.add(btProduto);
+
+	        btCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cliente.png"))); // NOI18N
+	        btCliente.setText("Cliente");
+	        btCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+	        btCliente.setFocusable(false);
+	        btCliente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+	        btCliente.setMargin(new java.awt.Insets(2, 12, 2, 12));
+	        btCliente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cliente-foco.png"))); // NOI18N
+	        btCliente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+	        btCliente.addActionListener(new java.awt.event.ActionListener() {
 	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	                miSobreActionPerformed(evt);
+	                miClienteActionPerformed(evt);
 	            }
 	        });
-	        menuSistema.add(miSobre);
-	        
-	        /// criação do componente miSair
+	        toolBar.add(btCliente);
+
+	        btFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/fornecedor.png"))); // NOI18N
+	        btFornecedor.setText("Fornecedor");
+	        btFornecedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+	        btFornecedor.setFocusable(false);
+	        btFornecedor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+	        btFornecedor.setMargin(new java.awt.Insets(2, 12, 2, 12));
+	        btFornecedor.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/fornecedor-foco.png"))); // NOI18N
+	        btFornecedor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+	        btFornecedor.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miFornecedorActionPerformed(evt);
+	            }
+	        });
+	        toolBar.add(btFornecedor);
+
 	        btSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/sair.png"))); // NOI18N
 	        btSair.setText("Sair");
 	        btSair.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -225,12 +137,76 @@ public class Menu extends javax.swing.JFrame{
 	            }
 	        });
 	        toolBar.add(btSair);
-	        
+
 	        getContentPane().add(toolBar, java.awt.BorderLayout.PAGE_START);
 
 	        desktopPane.setOpaque(false);
 	        getContentPane().add(desktopPane, java.awt.BorderLayout.CENTER);
-	        
+
+	        menuCadastros.setText("Cadastros");
+
+	        miProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
+	        miProduto.setText("Cadastrar Produto");
+	        miProduto.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miProdutoActionPerformed(evt);
+	            }
+	        });
+	        menuCadastros.add(miProduto);
+
+	        miCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
+	        miCliente.setText("Cadastrar Cliente");
+	        miCliente.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miClienteActionPerformed(evt);
+	            }
+	        });
+	        menuCadastros.add(miCliente);
+
+	        miFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, 0));
+	        miFornecedor.setText("Cadastrar Fornecedor");
+	        miFornecedor.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miFornecedorActionPerformed(evt);
+	            }
+	        });
+	        menuCadastros.add(miFornecedor);
+
+	        menuBar.add(menuCadastros);
+
+	        menuMovimentos.setText("Movimentos");
+
+	        miVenda.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, 0));
+	        miVenda.setText("Registrar Venda");
+	        miVenda.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miVendaActionPerformed(evt);
+	            }
+	        });
+	        menuMovimentos.add(miVenda);
+
+	        miCompra.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F6, 0));
+	        miCompra.setText("Registrar Compra");
+	        miCompra.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miCompraActionPerformed(evt);
+	            }
+	        });
+	        menuMovimentos.add(miCompra);
+
+	        menuBar.add(menuMovimentos);
+
+	        menuSistema.setText("Sistema");
+
+	        miSobre.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
+	        miSobre.setText("Sobre");
+	        miSobre.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {
+	                miSobreActionPerformed(evt);
+	            }
+	        });
+	        menuSistema.add(miSobre);
+
 	        miSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
 	        miSair.setText("Sair");
 	        miSair.addActionListener(new java.awt.event.ActionListener() {
@@ -239,16 +215,13 @@ public class Menu extends javax.swing.JFrame{
 	            }
 	        });
 	        menuSistema.add(miSair);
-	        
+
 	        menuBar.add(menuSistema);
 
 	        setJMenuBar(menuBar);
 
 	        setSize(new java.awt.Dimension(900, 700));
 	        setLocationRelativeTo(null);
-		      
-	      
-        
 	        
 	       
 	 }
