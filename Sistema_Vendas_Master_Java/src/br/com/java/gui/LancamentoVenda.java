@@ -366,6 +366,15 @@ public class LancamentoVenda extends javax.swing.JInternalFrame {
         setBounds(10, 10, 450, 500);
 		
 	}
+	
+	 public void setCliente(Cliente cliente) {
+	        ftfCliente.setValue(cliente);
+	    }
+
+	    public void setProduto(Produto produto) {
+	        ftfProduto.setValue(produto);
+	        ftfValorUnitario.setValue(produto.getPrecoVenda());
+	    }
 
 	protected void btRemoverItemActionPerformed(java.awt.event.ActionEvent evt) {
 		  // TODO Auto-generated method stub
