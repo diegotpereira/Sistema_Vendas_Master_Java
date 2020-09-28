@@ -27,15 +27,16 @@ public class CadastroCliente extends javax.swing.JInternalFrame {
     	java.awt.GridBagConstraints gridBagConstraints;
     	
     	pnBarraFerramentas = new javax.swing.JPanel();
-    	barraFerramentas = new javax.swing.JToolBar();
-    	btNovo = new javax.swing.JButton();
-    	btSalvar = new javax.swing.JButton();
-    	btExcluir = new javax.swing.JButton();
-    	btCancelar = new javax.swing.JButton();
-    	pnConteudo = new javax.swing.JPanel();
-    	pnForm = new javax.swing.JPanel();
-    	lbNome = new javax.swing.JLabel();
-    	lbDataNascimento = new javax.swing.JLabel();
+        barraFerramentas = new javax.swing.JToolBar();
+        btNovo = new javax.swing.JButton();
+        btSalvar = new javax.swing.JButton();
+        btExcluir = new javax.swing.JButton();
+        btCancelar = new javax.swing.JButton();
+        pnConteudo = new javax.swing.JPanel();
+        pnForm = new javax.swing.JPanel();
+        lbNome = new javax.swing.JLabel();
+        lbCpf = new javax.swing.JLabel();
+        lbDataNascimento = new javax.swing.JLabel();
         ftfNome = new javax.swing.JFormattedTextField();
         ftfCpf = new javax.swing.JFormattedTextField();
         ftfDataNascimento = new javax.swing.JFormattedTextField();
