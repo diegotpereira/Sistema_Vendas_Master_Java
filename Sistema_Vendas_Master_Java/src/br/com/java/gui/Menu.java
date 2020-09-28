@@ -90,6 +90,14 @@ public class Menu extends javax.swing.JFrame{
 	        menuCadastros.add(miProduto);
 	        	
 	        ///Adicionado evento miCliente
+	        btCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cliente.png"))); // NOI18N
+	        btCliente.setText("Cliente");
+	        btCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+	        btCliente.setFocusable(false);
+	        btCliente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+	        btCliente.setMargin(new java.awt.Insets(2, 12, 2, 12));
+	        btCliente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/cliente-foco.png"))); // NOI18N
+	        btCliente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 	        btCliente.addActionListener(new java.awt.event.ActionListener() {
 	        public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miClienteActionPerformed(evt);
@@ -106,7 +114,15 @@ public class Menu extends javax.swing.JFrame{
 	        menuCadastros.add(miCliente);
 	        
 	        
-	        
+	        //criação do componente btFornecedor
+	        btFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/fornecedor.png"))); // NOI18N
+	        btFornecedor.setText("Fornecedor");
+	        btFornecedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+	        btFornecedor.setFocusable(false);
+	        btFornecedor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+	        btFornecedor.setMargin(new java.awt.Insets(2, 12, 2, 12));
+	        btFornecedor.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/fornecedor-foco.png"))); // NOI18N
+	        btFornecedor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 	        btFornecedor.addActionListener(new java.awt.event.ActionListener() {
 	            public void actionPerformed(java.awt.event.ActionEvent evt) {
 	                miFornecedorActionPerformed(evt);
@@ -123,6 +139,15 @@ public class Menu extends javax.swing.JFrame{
 	        menuCadastros.add(miFornecedor);
 	        
 	        //Adicionado componente cadastro vendas 
+	        btVenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/venda.png"))); // NOI18N
+	        btVenda.setText("Venda");
+	        btVenda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+	        btVenda.setFocusable(false);
+	        btVenda.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+	        btVenda.setMargin(new java.awt.Insets(2, 12, 2, 12));
+	        btVenda.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/venda-foco.png"))); // NOI18N
+	        btVenda.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+	        btVenda.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 	        btVenda.addActionListener(new java.awt.event.ActionListener() {
 	            public void actionPerformed(java.awt.event.ActionEvent evt) {
 	                miVendaActionPerformed(evt);
@@ -149,6 +174,15 @@ public class Menu extends javax.swing.JFrame{
 	        
 	        
 	        ///componente miCompra
+	        btCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/compra.png"))); // NOI18N
+	        btCompra.setText("Compra");
+	        btCompra.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+	        btCompra.setFocusable(false);
+	        btCompra.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+	        btCompra.setMargin(new java.awt.Insets(2, 12, 2, 12));
+	        btCompra.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/compra-foco.png"))); // NOI18N
+	        btCompra.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+	        btCompra.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 	        btCompra.addActionListener(new java.awt.event.ActionListener() {
 	            public void actionPerformed(java.awt.event.ActionEvent evt) {
 	                miCompraActionPerformed(evt);
@@ -176,7 +210,15 @@ public class Menu extends javax.swing.JFrame{
 	        });
 	        menuSistema.add(miSobre);
 	        
-	        /// componente miSair
+	        /// criação do componente miSair
+	        btSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/sair.png"))); // NOI18N
+	        btSair.setText("Sair");
+	        btSair.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+	        btSair.setFocusable(false);
+	        btSair.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+	        btSair.setMargin(new java.awt.Insets(2, 12, 2, 12));
+	        btSair.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/java/gui/img/sair-foco.png"))); // NOI18N
+	        btSair.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 	        btSair.addActionListener(new java.awt.event.ActionListener() {
 	            public void actionPerformed(java.awt.event.ActionEvent evt) {
 	                miSairActionPerformed(evt);
