@@ -93,4 +93,9 @@ public class ProdutoDAO implements IDAO<Produto> {
         return produto;
 	}
 
+	public void entradaEstoque(Conexao c, int codigo, int quantidade) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
