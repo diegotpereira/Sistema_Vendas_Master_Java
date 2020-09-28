@@ -531,6 +531,11 @@ public class LancamentoVenda extends javax.swing.JInternalFrame {
 		
 	}
 
+	private boolean validarFormulario() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 	protected void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO Auto-generated method stub
 		salvar(false);
