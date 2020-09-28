@@ -1,5 +1,37 @@
 package br.com.java.to.enums;
 
-public class Situacao {
+public enum Situacao {
+	
+
+    ABERTA(1, "Aberta"),
+ 
+    FINALIZADA(2, "Finalizada"),
+ 
+    CANCELADA(3, "Cancelada");
+	
+	private final int ID;
+    private final String DESCRICAO;
+    
+    
+    private Situacao(int id, String descricao) {
+        this.ID = id;
+        this.DESCRICAO = descricao;
+    }
+    
+	public int getID() {
+		return ID;
+	}
+	public String getDESCRICAO() {
+		return DESCRICAO;
+	}
+    
+	 public int getId() {
+	        return ID;
+	    }
+
+    @Override
+    public String toString() {
+        return this.DESCRICAO;
+    }
 
 }
