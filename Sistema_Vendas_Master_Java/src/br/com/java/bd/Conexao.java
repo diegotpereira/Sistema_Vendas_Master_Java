@@ -38,9 +38,10 @@ public class Conexao {
 		return conexao;
 	}
 	
-	public void Confirmar () throws SQLException {
-		
-		try {
+
+	public void confirmar() throws SQLException {
+		// TODO Auto-generated method stub
+        try {
 			
 			conexao.commit();
 			
@@ -51,6 +52,7 @@ public class Conexao {
 			conexao.close();
 			
 		}
+		
 	}
 
 }
