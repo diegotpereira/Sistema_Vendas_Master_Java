@@ -2,6 +2,8 @@ package br.com.java.to;
 
 import java.util.Date;
 
+import com.jdenner.to.Cliente;
+
 public class Cliente {
 	
     private int codigo;
@@ -32,6 +34,30 @@ public class Cliente {
 	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
+	@Override
+	public String toString() {
+		return getNome();
+	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + codigo;
+		result = prime * result + ((cpf == null) ? 0 : cpf.hashCode());
+		result = prime * result + ((dataNascimento == null) ? 0 : dataNascimento.hashCode());
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		return result;
+	}
+	  @Override
+	    public boolean equals(Object o) {
+	        if (o instanceof Cliente) {
+	            Cliente c = (Cliente) o;
+	            if (c.getCodigo() == this.getCodigo()) {
+	                return true;
+	            }
+	        }
+	        return false;
+	    }
     
     
 
