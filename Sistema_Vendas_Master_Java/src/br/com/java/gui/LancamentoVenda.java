@@ -268,7 +268,7 @@ public class LancamentoVenda extends javax.swing.JInternalFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         pnFormItens.add(lbProduto, gridBagConstraints);
 
-        lbValorUnitario.setText("Valor Unitário:");
+        lbValorUnitario.setText("Valor Unitario:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
