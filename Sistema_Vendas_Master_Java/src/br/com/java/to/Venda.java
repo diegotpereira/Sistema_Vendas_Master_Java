@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import com.jdenner.to.Cliente;
+import com.jdenner.to.ItemVenda;
 
 import br.com.java.to.enums.Situacao;
 
@@ -38,48 +39,78 @@ public class Venda {
         this.itensRemover = new ArrayList<>();
 
     }
-    
-	public int getCodigo() {
-		return codigo;
-	}
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
-	public Cliente getCliente() {
-		return cliente;
-	}
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-	public Date getDataVenda() {
-		return dataVenda;
-	}
-	public void setDataVenda(Date dataVenda) {
-		this.dataVenda = dataVenda;
-	}
-	public Double getValorTotal() {
-		return valorTotal;
-	}
-	public void setValorTotal(Double valorTotal) {
-		this.valorTotal = valorTotal;
-	}
-	public Situacao getSituacao() {
-		return situacao;
-	}
-	public void setSituacao(Situacao situacao) {
-		this.situacao = situacao;
-	}
-	public List<ItemVenda> getItens() {
-		return itens;
-	}
-	public void setItens(List<ItemVenda> itens) {
-		this.itens = itens;
-	}
-	public List<ItemVenda> getItensRemover() {
-		return itensRemover;
-	}
-	public void setItensRemover(List<ItemVenda> itensRemover) {
-		this.itensRemover = itensRemover;
-	}
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Date getDataVenda() {
+        return dataVenda;
+    }
+
+    public void setDataVenda(Date dataVenda) {
+        this.dataVenda = dataVenda;
+    }
+
+    public Double getValorTotal() {
+        double total = 0;
+        for (ItemVenda iv : itens) {
+            total += (iv.getValorUnitario() * iv.getQuantidade());
+        }
+        return total;
+    }
+
+    public Situacao getSituacao() {
+        return situacao;
+    }
+
+    public void setSituacao(Situacao situacao) {
+        this.situacao = situacao;
+    }
+
+    public void setSituacao(int situacao) {
+        if (situacao == Situacao.ABERTA.getId()) {
+            setSituacao(Situacao.ABERTA);
+        } else if (situacao == Situacao.FINALIZADA.getId()) {
+            setSituacao(Situacao.FINALIZADA);
+        } else if (situacao == Situacao.CANCELADA.getId()) {
+            setSituacao(Situacao.CANCELADA);
+        }
+    }
+
+    public List<ItemVenda> getItens() {
+        return itens;
+    }
+
+    public List<ItemVenda> getItensRemover() {
+        return itensRemover;
+    }
+
+    public void addItem(ItemVenda itemVenda) {
+        itens.add(itemVenda);
+    }
+
+    public void removeItem(ItemVenda itemVenda) {
+        itens.remove(itemVenda);
+        if (itemVenda.getCodigo() != 0) {
+            itensRemover.add(itemVenda);
+        }
+    }
+
+    public int quantidadeItens() {
+        return itens.size();
+    }
 
 }
