@@ -2,6 +2,7 @@ package br.com.java.dao;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import br.com.java.bd.Conexao;
@@ -93,9 +94,21 @@ public class ProdutoDAO implements IDAO<Produto> {
         return produto;
 	}
 
-	public void entradaEstoque(Conexao c, int codigo, int quantidade) {
+	public void entradaEstoque(Conexao c, int codigo, int quantidade) throws Exception {
 		// TODO Auto-generated method stub
+		String sql = "UPDATE TBPRODUTO SET QUANTIDADEESTOQUE= QUANTIDADEESTOQUE  + ? WHERE CODIGO=?";
+        PreparedStatement ps = c.getConexao().prepareStatement(sql);
+        ps.setInt(1, quantidade);
+        ps.setInt(2, codigo);
+        ps.execute();
 		
 	}
+	public void saidaEstoque(Conexao c, int codigo, int quantidade) throws Exception {
+        String sql = "UPDATE TBPRODUTO SET QUANTIDADEESTOQUE= QUANTIDADEESTOQUE  - ? WHERE CODIGO=?";
+        PreparedStatement ps = c.getConexao().prepareStatement(sql);
+        ps.setInt(1, quantidade);
+        ps.setInt(2, codigo);
+        ps.execute();
+    }
 
 }
