@@ -145,7 +145,7 @@
         <Component class="javax.swing.JButton" name="btVenda">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/venda.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/venda.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Venda"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -157,7 +157,7 @@
               <Insets value="[2, 12, 2, 12]"/>
             </Property>
             <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/venda-foco.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/venda-foco.png"/>
             </Property>
             <Property name="verticalAlignment" type="int" value="3"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
@@ -169,7 +169,7 @@
         <Component class="javax.swing.JButton" name="btCompra">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/compra.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/compra.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Compra"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -181,7 +181,7 @@
               <Insets value="[2, 12, 2, 12]"/>
             </Property>
             <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/compra-foco.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/compra-foco.png"/>
             </Property>
             <Property name="verticalAlignment" type="int" value="3"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
@@ -193,7 +193,7 @@
         <Component class="javax.swing.JButton" name="btProduto">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/produto.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/produto.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Produto"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -205,7 +205,7 @@
               <Insets value="[2, 12, 2, 12]"/>
             </Property>
             <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/produto-foco.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/produto-foco.png"/>
             </Property>
             <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
@@ -216,7 +216,7 @@
         <Component class="javax.swing.JButton" name="btCliente">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/cliente.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/cliente.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cliente"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -228,7 +228,7 @@
               <Insets value="[2, 12, 2, 12]"/>
             </Property>
             <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/cliente-foco.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/cliente-foco.png"/>
             </Property>
             <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
@@ -239,7 +239,7 @@
         <Component class="javax.swing.JButton" name="btFornecedor">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/fornecedor.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/fornecedor.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Fornecedor"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -251,7 +251,7 @@
               <Insets value="[2, 12, 2, 12]"/>
             </Property>
             <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/fornecedor-foco.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/fornecedor-foco.png"/>
             </Property>
             <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
@@ -262,7 +262,7 @@
         <Component class="javax.swing.JButton" name="btSair">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/sair.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/sair.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Sair"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -274,7 +274,7 @@
               <Insets value="[2, 12, 2, 12]"/>
             </Property>
             <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/jdenner/gui/img/sair-foco.png"/>
+              <Image iconType="3" name="/br/com/java/gui/img/sair-foco.png"/>
             </Property>
             <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
