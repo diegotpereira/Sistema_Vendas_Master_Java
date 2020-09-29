@@ -8,7 +8,7 @@ public class Conexao {
 	
 	public final String SERVIDOR = "localhost";
 	public final String PORTA = "3306";
-	public final String BD = "dbsistemavendamaster?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false\"";
+	public final String BD = "dbsistemavendamaster?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
 	public final String USUARIO = "root";
 	public final String SENHA = "root";
 	public final String URL = "jdbc:mysql://" + SERVIDOR + ":" + PORTA + "/" + BD;
